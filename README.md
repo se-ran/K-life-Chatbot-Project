@@ -26,9 +26,9 @@ Extracted, processed, and analyzed PDF data using pdfplumber and NLTK, then cons
 - OpenAI GPT-3.5-Turbo: Used for generating responses to queries not covered in the dataset.
 
 ### Application Workflow
-1. User Query Input: The user enters a query through the chatbot interface.
-2. BM25 Matching: The query is matched against existing Q&A data using the BM25 algorithm.
-3. Response Generation:
+1. The user enters a query through the chatbot interface.
+2. The query is matched against existing Q&A data using the BM25 algorithm.
+3. Response Generation
 - If a high-similarity match is found (similarity > 0.85), the system retrieves the corresponding answer from the dataset.
 - If no close match exists, the query is sent to GPT-3.5-Turbo for a generated response.
 4. The conversation is displayed interactively, maintaining a seamless user experience.
